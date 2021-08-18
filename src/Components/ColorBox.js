@@ -4,7 +4,7 @@ class ColorBox extends Component {
 constructor(props) {
     super(props);
     this.state = {
-      color: null
+      color: "#000"
     }
   };
 
@@ -17,7 +17,7 @@ constructor(props) {
           <li className="ColorInput cards-item">
             <div className="card">
               <div className="card-content">
-                <div className="card-image"></div>
+                <div className="card-image" style={{background: this.state.color}} ></div>
                 <div className="card-title">Color</div>
                 <p className="card-text">
                   <div className="input btn-block">
